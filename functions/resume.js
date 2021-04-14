@@ -32,8 +32,6 @@ exports.handler = async (event, context) => {
     headers: {
       'content-type': 'application/pdf',
     },
-    body: JSON.stringify({
-      buffer: pdf,
-    }),
+    body: pdf,
   }
 }
