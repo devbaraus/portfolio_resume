@@ -4,8 +4,7 @@ const eleventyPackage = require('@11ty/eleventy/package.json')
 
 const env = process.env
 
-const URL = env.URL || 'http://localhost:5000'
-
+const URL = env.URL || 'http://localhost:8080'
 
 // Web/PWA default configuration
 module.exports = function () {
@@ -16,7 +15,8 @@ module.exports = function () {
 		author: 'Bruno de Araújo Alves',
 		name: 'Resume | DevBaraus',
 		short_name: 'DevBaraus',
-		description: 'Sou Bruno de Araújo Alves, estudante de Ciência da Computação e desenvolvedor web.',
+		description:
+			'Sou Bruno de Araújo Alves, estudante de Ciência da Computação e desenvolvedor web.',
 		keywords: 'resume, computer, online, web',
 		lang: 'pt',
 		dir: 'auto',
