@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
-  await page.goto('http://localhost:8080/print/', {
+  await page.goto((process.env.URL || 'http://localhost:8080') + '/resume.pdf', {
     waitUntil: 'networkidle0',
   })
 
