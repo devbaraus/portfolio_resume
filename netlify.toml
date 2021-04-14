@@ -1,0 +1,5 @@
+[functions]
+# Sets a custom directory for Netlify Functions
+directory = "functions/"
+
+external_node_modules = ["puppeteer-core", "chrome-aws-lambda"]
