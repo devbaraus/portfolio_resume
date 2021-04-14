@@ -20,7 +20,6 @@ exports.handler = async (event, context) => {
 
   const pdf = await page.pdf({
     printBackground: true,
-    path: 'dist/resume.pdf',
     width: '900px',
     height: '1275px',
     // format: 'letter',
