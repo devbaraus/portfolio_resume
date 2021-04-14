@@ -1,11 +1,12 @@
-<div class='page-viewer w-full bg-white flex h-a4'>
-  <div class='page-content w-8/12 py-12 px-12'>
+<div id='pdf'
+     class='page-viewer w-full {{ "shadow-lg rounded-lg" if web }} bg-white flex flex-wrap {{ "md:h-a4" if web else "h-a4" }}'>
+  <div class='page-content {{ "w-full md:w-8/12" if web else "w-8/12" }} py-12 px-12'>
     <div class='content-header flex items-center mb-4'>
       <img src='https://github.com/devbaraus.png' alt='Foto Bruno de Araújo Alves'
            class='h-23 w-20 rounded-full content-thumb mr-4'>
       <div>
         <h1 class='text-3xl font-semibold mb-2'>Bruno de Araújo Alves</h1>
-        <p class='uppercase text-sm text-gray-400'>Desenvolvedor de Software</p>
+        <p class='uppercase text-sm text-gray-500'>Desenvolvedor de Software</p>
       </div>
     </div>
     <div class='content-profile mb-4'>
@@ -20,7 +21,7 @@
           <p class='font-semibold'>{{ item.degree }}
             , {{ item.school }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-400 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -34,7 +35,7 @@
           <p class='font-semibold'>{{ item.job_title }}
             , {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-400 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -48,7 +49,7 @@
           <p class='font-semibold'>{{ item.job_title }}
             , {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-400 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -56,7 +57,8 @@
       {% endfor %}
     </div>
   </div>
-  <div class='page-info w-4/12 bg-gray-900 py-12 px-12 pt-36 text-gray-100 text-sm'>
+  <div
+    class='page-info {{ "w-full md:w-4/12" if web else "w-4/12" }} bg-gray-900 py-12 px-12 md:pt-36 text-gray-100 text-sm {{ "md:rounded-tr-lg md:rounded-br-lg" if web }} '>
     <div class='info-personal mb-6'>
       <h3 class='text-xl mb-4'>Informações</h3>
       <p class='mb-2'>Anápolis, Goiás</p>

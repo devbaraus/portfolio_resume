@@ -12,8 +12,9 @@
     "build:webpack": "webpack",
     "build:pwa": "node pwa-assets.js",
     "build:workbox": "workbox generateSW workbox.config.js",
+    "generate:resume": "node resume.js",
     "clean": "rm -rf dist",
-    "dev": "cross-env NODE_ENV=development  npm-run-all clean build:eleventy build:webpack build:pwa -p dev:*",
+    "dev": "cross-env NODE_ENV=development  npm-run-all clean build:eleventy build:webpack build:pwa -p dev:* generate:resume",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:webpack": "webpack --watch"
   },
@@ -59,8 +60,5 @@
     "webpack-cli": "^4.2.0",
     "workbox-cli": "^6.1.2"
   },
-  "dependencies": {
-    "chrome-aws-lambda": "^8.0.2",
-    "puppeteer-core": "^8.0.0"
-  }
+  "dependencies": {}
 }
