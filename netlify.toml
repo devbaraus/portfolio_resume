@@ -1,5 +1,14 @@
-[functions]
-# Sets a custom directory for Netlify Functions
-directory = "functions/"
+[[redirects]]
+  from = "/resume"
+  to = "/resume.pdf"
+  status = 200
+  force = true
+  query = { ref = "web" }
 
-external_node_modules = ["puppeteer-core", "chrome-aws-lambda"]
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+
