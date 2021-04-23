@@ -18,13 +18,12 @@
         já estagiei por 6 meses na área e desenvolvi alguns software para uso do IFG.</p>
     </div>
     <div class='content-education mb-6'>
-      <h2 class='text-2xl font-semibold mb-4'>Formação Acadêmica</h2>
+      <h2 class='text-2xl font-semibold mb-4'>Educação</h2>
       {% for item in education %}
         <div class='mb-4'>
-          <p class='font-semibold'>{{ item.degree }}
-            , {{ item.school }}{{ ', ' if item.city }}{{ item.city }}</p>
+          <p class='font-semibold'>{{ item.degree }}, {{ item.school }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+              class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -35,10 +34,9 @@
       <h2 class='text-2xl font-semibold mb-4'>Experiência Profissional</h2>
       {% for item in employment %}
         <div class='mb-4'>
-          <p class='font-semibold'>{{ item.job_title }}
-            , {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
+          <p class='font-semibold'>{{ item.job_title }}, {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+              class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -49,10 +47,26 @@
       <h2 class='text-2xl font-semibold mb-4'>Estágios</h2>
       {% for item in internships %}
         <div class='mb-4'>
-          <p class='font-semibold'>{{ item.job_title }}
-            , {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
+          <p class='font-semibold'>{{ item.job_title }}, {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <p
-            class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+              class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+          {% if item.description %}
+            <p>{{ item.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class='content-projects mb-6'>
+      <h2 class='text-2xl font-semibold mb-4'>Trabalhos</h2>
+      {% for item in projects %}
+        <div class='mb-4'>
+          <p class='font-semibold'>{{ item.project_title }}
+            , {{ item.project_subtitle }}{{ ', ' if item.city }}{{ item.city }}</p>
+          <p class='text-sm uppercase underline'>
+            <a href="{{ item.url.link }}" target="_blank" rel='noreferrer'>{{ item.url.label }}</a>
+          </p>
+          <p
+              class='text-sm text-gray-500 uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
           {% if item.description %}
             <p>{{ item.description }}</p>
           {% endif %}
@@ -61,10 +75,10 @@
     </div>
   </div>
   <div
-    class='page-info {{ "w-full md:w-4/12" if web else "w-4/12" }} bg-gray-900 py-12 px-12 md:pt-36 text-gray-100 text-sm {{ "md:rounded-tr-lg md:rounded-br-lg" if web }} '>
+      class='page-info {{ "w-full md:w-4/12" if web else "w-4/12" }} bg-gray-900 py-12 px-12 md:pt-36 text-gray-100 text-sm {{ "md:rounded-tr-lg md:rounded-br-lg" if web }} '>
     <div class='info-personal mb-6'>
       <h3 class='text-xl mb-4'>Informações</h3>
-      <p class='mb-2'>Anápolis, Goiás</p>
+      <p class='mb-2'>{{ personal.address }}</p>
       <p class='mb-2'><a href='tel:{{ personal.phone }}'>{{ personal.phone }}</a></p>
       <p class='mb-2'><a href='mailto:{{ personal.email }}'>{{ personal.email }}</a></p>
     </div>

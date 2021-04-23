@@ -1,7 +1,10 @@
 module.exports = {
+	address: 'Bairro de Lourdes, Anápolis, Goiás',
 	phone: '(62) 9 99120-6888',
 	email: 'me@baraus.dev',
 	competences: [
+		'Português Nativo',
+		'Inglês Intermediário',
 		'JavaScript',
 		'PHP',
 		'Python',

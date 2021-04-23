@@ -14,7 +14,7 @@
     "build:workbox": "workbox generateSW workbox.config.js",
     "generate:resume": "node resume.js",
     "clean": "rm -rf dist",
-    "dev": "cross-env NODE_ENV=development  npm-run-all clean build:eleventy build:webpack build:pwa -p dev:* generate:resume",
+    "dev": "cross-env NODE_ENV=development  npm-run-all clean build:eleventy build:webpack -p dev:* generate:resume",
     "dev:eleventy": "eleventy --serve --quiet",
     "dev:webpack": "webpack --watch"
   },
