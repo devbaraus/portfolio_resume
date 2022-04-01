@@ -1,5 +1,5 @@
 module.exports = {
-	address: 'Bairro de Lourdes, Anápolis, Goiás',
+	address: 'Anápolis, Goiás',
 	phone: '(62) 9 99120-6888',
 	email: 'me@baraus.dev',
 	competences: [
@@ -30,5 +30,6 @@ module.exports = {
 		},
 		{ label: 'IFG Produz', link: 'https://ifgproduz.ifg.edu.br' },
 		{ label: 'Inteligência Artificial', link: 'https://ia.ifg.edu.br' },
+		{ label: 'Ciência da Computação', link: 'https://bcc.anapolis.ifg.edu.br' },
 	],
 }

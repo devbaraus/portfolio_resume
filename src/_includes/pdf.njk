@@ -20,12 +20,12 @@
     <div class='content-education mb-6'>
       <h2 class='text-2xl font-semibold mb-4'>Educação</h2>
       {% for item in education %}
-        <div class='mb-4'>
+        <div class='mb-4 space-y-2'>
           <p class='font-semibold'>{{ item.degree }}, {{ item.school }}{{ ', ' if item.city }}{{ item.city }}</p>
           <time
-              class='text-sm text-medium uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
+              class='text-xs text-medium uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
           {% if item.description %}
-            <p>{{ item.description }}</p>
+            <p class='text-sm'>{{ item.description }}</p>
           {% endif %}
         </div>
       {% endfor %}
@@ -33,12 +33,12 @@
     <div class='content-employment mb-6'>
       <h2 class='text-2xl font-semibold mb-4'>Experiência Profissional</h2>
       {% for item in employment %}
-        <div class='mb-4'>
+        <div class='mb-4 space-y-2'>
           <p class='font-semibold'>{{ item.job_title }}, {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <time
-              class='text-sm text-dark uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
+              class='text-xs text-medium uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
           {% if item.description %}
-            <p>{{ item.description }}</p>
+            <p class='text-sm'>{{ item.description }}</p>
           {% endif %}
         </div>
       {% endfor %}
@@ -46,12 +46,12 @@
     <div class='content-internships mb-6'>
       <h2 class='text-2xl font-semibold mb-4'>Estágios</h2>
       {% for item in internships %}
-        <div class='mb-4'>
+        <div class='mb-4 space-y-2'>
           <p class='font-semibold'>{{ item.job_title }}, {{ item.employer }}{{ ', ' if item.city }}{{ item.city }}</p>
           <time
-              class='text-sm text-dark uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
+              class='text-xs text-medium uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time>
           {% if item.description %}
-            <p>{{ item.description }}</p>
+            <p class='text-sm'>{{ item.description }}</p>
           {% endif %}
         </div>
       {% endfor %}
@@ -59,16 +59,15 @@
     <div class='content-projects mb-6'>
       <h2 class='text-2xl font-semibold mb-4'>Trabalhos</h2>
       {% for item in projects %}
-        <div class='mb-4'>
-          <p class='font-semibold'>{{ item.project_title }}
-            , {{ item.project_subtitle }}{{ ', ' if item.city }}{{ item.city }}</p>
-          <p class='text-sm uppercase underline'>
+        <div class='mb-4 space-y-2'>
+          <p class='font-semibold'>{{ item.project_title }}, {{ item.project_subtitle }}{{ ', ' if item.city }}{{ item.city }}</p>
+          <p class='text-xs uppercase underline'>
             <a href="{{ item.url.link }}" target="_blank" rel='noreferrer'>{{ item.url.label }}</a>
           </p>
-          <p
-              class='text-sm text-dark uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</p>
+          {# <time
+              class='text-xs  text-medium uppercase'>{{ item.start_date }}{{ ' - ' if item.end_date }}{{ item.end_date }}</time> #}
           {% if item.description %}
-            <p>{{ item.description }}</p>
+            <p class='text-sm'>{{ item.description }}</p>
           {% endif %}
         </div>
       {% endfor %}
