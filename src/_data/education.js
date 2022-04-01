@@ -20,7 +20,7 @@ module.exports = [
 		school: 'Instituto Federal de Goiás - Câmpus Anápolis',
 		city: '',
 		start_date: 'Fevereiro 2018',
-		end_date: '',
+		end_date: 'Atualmente',
 		description: '',
 	},
 ]
