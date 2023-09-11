@@ -1,5 +1,6 @@
 /* Professional Experience */
 module.exports = [
+
 	{
 		project_title: 'Baru Observatório',
 		project_subtitle: 'Observatório de Jornalismo Ambiental',
@@ -12,6 +13,19 @@ module.exports = [
 		},
 		description:
 			'Site de jornalismo ambiental, integrado a um observatório diário de outras plataformas.',
+	},
+		{
+		project_title: 'Vagas Anápolis',
+		project_subtitle: 'Vagas de emprego em Anápolis',
+		city: 'Anápolis',
+		start_date: 'Novembro 2022',
+		end_date: '',
+		url: {
+			label: 'vagas.bcc.ifg.edu.br',
+			link: 'vagas.bcc.ifg.edu.br',
+		},
+		description:
+			'Plataforma de vagas de emprego em Anápolis integrado à inteligencia artificial.',
 	},
 	{
 		project_title: 'BCC',

@@ -15,7 +15,7 @@ module.exports = [
 		city: null,
 		start_date: 'Junho 2021',
 		end_date: null,
-		description: 'Participei como estágiario no desenvolvimento e manutenção de sistemas de gestão pública.',
+		description: 'Desenvolvimento de sistema web para análise de riscos de indivíduos.',
 	  },
 	// {
 	//   job_title: 'Atendente Comercial',
