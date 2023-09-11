@@ -18,9 +18,9 @@ module.exports = [
 	{
 		degree: 'Graduação',
 		school: 'Instituto Federal de Goiás - Câmpus Anápolis',
-		city: '',
+		city: 'Anápolis',
 		start_date: 'Fevereiro 2018',
-		end_date: 'Atualmente',
+		end_date: 'Julho 2023',
 		description: '',
 	},
 ]

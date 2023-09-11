@@ -22,14 +22,15 @@ module.exports = {
 		{ label: 'Instagram', link: 'https://instagram.com/devbaraus' },
 	],
 	works: [
-		{ label: 'Code Tower', link: 'https://codetower.com.br/' },
-		{ label: 'IFG Audio', link: 'https://ifgaudio.bcc.ifg.edu.br/' },
-		{
-			label: 'Comissão Própria de Avaliação',
-			link: 'https://cpa.bcc.ifg.edu.br',
-		},
+		// { label: 'Code Tower', link: 'https://codetower.com.br/' },
+		{ label: 'Zerun Agência Digital', link: 'https://zerun.com.br/' },
+		{ label: 'Ciência da Computação', link: 'https://bcc.ifg.edu.br' },
+		// { label: 'IFG Audio', link: 'https://ifgaudio.bcc.ifg.edu.br/' },
+		// {
+		// 	label: 'Comissão Própria de Avaliação',
+		// 	link: 'https://cpa.bcc.ifg.edu.br',
+		// },
 		{ label: 'IFG Produz', link: 'https://ifgproduz.ifg.edu.br' },
 		{ label: 'Inteligência Artificial', link: 'https://ia.ifg.edu.br' },''
-		{ label: 'Ciência da Computação', link: 'https://bcc.ifg.edu.br' },
 	],
 }

@@ -13,10 +13,10 @@ module.exports = function () {
 		today: new Date(), // Used in the sitemap.xml
 		url: URL,
 		author: 'Bruno de Araújo Alves',
-		name: 'Resume | DevBaraus',
-		short_name: 'DevBaraus',
+		name: 'Resume | BARAUS',
+		short_name: 'BARAUS',
 		description:
-			'Sou Bruno de Araújo Alves, estudante de Ciência da Computação e desenvolvedor web.',
+			'Sou Bruno de Araújo Alves, formado em Ciência da Computação e Desenvolvedor Full Stack.',
 		keywords: 'resume, computer, online, web',
 		lang: 'pt',
 		dir: 'auto',
