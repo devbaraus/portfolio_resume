@@ -16,4 +16,12 @@ module.exports = [
     end_date: 'Novembro 2020',
     description: 'Participei como estágiario no desenvolvimento e manutenção de sistemas de gestão pública.',
   },
+  {
+    job_title: 'Desenvolvedor Web Full Stack',
+    employer: 'Siedos',
+    city: 'Anápolis',
+    start_date: 'Junho 2021',
+    end_date: null,
+    description: 'Participei como estágiario no desenvolvimento e manutenção de sistemas de gestão pública.',
+  },
 ]
