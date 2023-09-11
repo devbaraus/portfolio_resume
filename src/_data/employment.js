@@ -9,6 +9,14 @@ module.exports = [
 		description:
 			'Manutenção e instalação de computadores e rede cabeada nas Secretarias da Prefeitura de Anápolis, principalmente de Educação e Meio Ambiente.',
 	},
+	{
+		job_title: 'Desenvolvedor Web Full Stack',
+		employer: 'Management Risk Analysis',
+		city: null,
+		start_date: 'Junho 2021',
+		end_date: null,
+		description: 'Participei como estágiario no desenvolvimento e manutenção de sistemas de gestão pública.',
+	  },
 	// {
 	//   job_title: 'Atendente Comercial',
 	//   employer: 'Tropical Piscinas',
